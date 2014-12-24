@@ -176,4 +176,27 @@ function custom_glance_items( $items = array() ) {
 
 add_filter( 'dashboard_glance_items', 'custom_glance_items', 10, 1 );
 
+add_filter('posts_join', 'perfetto_search_join' );
+function perfetto_search_join ($join){
+    global $pagenow, $wpdb;
+    // Filter only when performing a search on edit page on all page / post / custom post type
+    if ( is_admin() && $pagenow=='edit.php' && $_GET['s'] != '') {
+        $join .='LEFT JOIN '.$wpdb->postmeta. ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
+    }
+    return $join;
+}
+
+add_filter( 'posts_where', 'perfetto_search_where' );
+function perfetto_search_where( $where ){
+    global $pagenow, $wpdb;
+    // Filter only when performing a search on edit page on all page / post / custom post type
+    if ( is_admin() && $pagenow=='edit.php' && $_GET['s'] != '') {
+        $where = preg_replace(
+       "/\(\s*".$wpdb->posts.".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
+       "(".$wpdb->posts.".post_title LIKE $1) OR (".$wpdb->postmeta.".meta_value LIKE $1)", $where );
+    }
+
+    return $where;
+}
+
 ?>
