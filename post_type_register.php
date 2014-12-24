@@ -20,6 +20,7 @@ function register_wp_dental() {
                 'parent_item_colon' => __( 'Catatan Induk' ),
             ),
             'public' => true,
+            'rewrite' => false,
             'has_archive' => true,
             'supports' => array('title', 'editor', 'comments', 'thumbnail'),
             'menu_icon' => 'dashicons-portfolio',
