@@ -181,25 +181,25 @@ function wp_dental_keadaan_umum_functions() {
         <input type="checkbox" name="_ps_jantung" id="ps_jantung" value="Jantung" <?php if ( isset ( $ps_jantung ) ) checked( $ps_jantung, 'Jantung' ); ?> />Jantung
     </label><br />
     <label for="ginjal">
-        <input type="checkbox" name="_ps_ginjal" id="ps_ginjal" value="yes" <?php if ( isset ( $ps_ginjal ) ) checked( $ps_ginjal, 'yes' ); ?> />Ginjal
+        <input type="checkbox" name="_ps_ginjal" id="ps_ginjal" value="Ginjal" <?php if ( isset ( $ps_ginjal ) ) checked( $ps_ginjal, 'Ginjal' ); ?> />Ginjal
     </label><br />
     <label for="hepatitis">
-        <input type="checkbox" name="_ps_hepatitis" id="ps_hepatitis" value="yes" <?php if ( isset ( $ps_hepatitis ) ) checked( $ps_hepatitis, 'yes' ); ?> />Hepatitis
+        <input type="checkbox" name="_ps_hepatitis" id="ps_hepatitis" value="Hepatitis" <?php if ( isset ( $ps_hepatitis ) ) checked( $ps_hepatitis, 'Hepatitis' ); ?> />Hepatitis
     </label><br />
     <label for="tbc">
-        <input type="checkbox" name="_ps_tbc" id="ps_tbc" value="yes" <?php if ( isset ( $ps_tbc ) ) checked( $ps_tbc, 'yes' ); ?> />TBC
+        <input type="checkbox" name="_ps_tbc" id="ps_tbc" value="TBC" <?php if ( isset ( $ps_tbc ) ) checked( $ps_tbc, 'TBC' ); ?> />TBC
     </label><br />
     <label for="aids">
-        <input type="checkbox" name="_ps_aids" id="ps_aids" value="yes" <?php if ( isset ( $ps_aids ) ) checked( $ps_aids, 'yes' ); ?> />AIDS
+        <input type="checkbox" name="_ps_aids" id="ps_aids" value="AIDS" <?php if ( isset ( $ps_aids ) ) checked( $ps_aids, 'AIDS' ); ?> />AIDS
     </label><br />
     <label for="pms">
-        <input type="checkbox" name="_ps_pms" id="ps_pms" value="yes" <?php if ( isset ( $ps_pms ) ) checked( $ps_pms, 'yes' ); ?> />PMS
+        <input type="checkbox" name="_ps_pms" id="ps_pms" value="PMS" <?php if ( isset ( $ps_pms ) ) checked( $ps_pms, 'PMS' ); ?> />PMS
     </label><br />
     <label for="hamil">
-        <input type="checkbox" name="_ps_hamil" id="ps_hamil" value="yes" <?php if ( isset ( $ps_hamil ) ) checked( $ps_hamil, 'yes' ); ?> />Hamil
+        <input type="checkbox" name="_ps_hamil" id="ps_hamil" value="Hamil" <?php if ( isset ( $ps_hamil ) ) checked( $ps_hamil, 'Hamil' ); ?> />Hamil
     </label><br />
     <label for="etc">
-        <input type="checkbox" name="_ps_lain_lain" id="ps_lain_lain" value="yes" <?php if ( isset ( $ps_lain_lain ) ) checked( $ps_lain_lain, 'yes' ); ?> />Lain-lain
+        <input type="checkbox" name="_ps_lain_lain" id="ps_lain_lain" value="Lain-Lain" <?php if ( isset ( $ps_lain_lain ) ) checked( $ps_lain_lain, 'Lain-Lain' ); ?> />Lain-lain
     </label></td>
 </tr>
 <tr>
